@@ -331,45 +331,62 @@
         </main>
         <footer class="footer">
             <div class="container footer-container">
-                <div class="footer-logo-text">
-                    <a class="logo link" href="./index.html">
-                        Web<span class="logo-foot">Studio</span>
-                    </a>
-                    <p class="copyright-text">Increase the flow of customers and sales for your business with digital marketing & growth
-                        solutions.</p>
+                <div class="info-box">
+                    <div class="footer-logo-text">
+                        <a class="logo link" href="./index.html">
+                            Web<span class="logo-foot">Studio</span>
+                        </a>
+                        <p class="copyright-text">Increase the flow of customers and sales for your business with digital marketing & growth
+                            solutions.</p>
+                    </div>
+                    <div>
+                        <p class="social-text">Social media</p>
+                        <ul class="list social-list social-list--footer">
+                            <li class="social-list-item ">
+                                <a class="link social-link-footer " href="/">
+                                    <svg class="social-icon" height="24" width="24">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="link social-link-footer" href="/">
+                                    <svg class="social-icon" height="24" width="24">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="link social-link-footer" href="/">
+                                    <svg class="social-icon" height="24" width="24">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="link social-link-footer" href="/">
+                                    <svg class="social-icon" height="24" width="24">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <p class="social-text">Social media</p>
-                    <ul class="list social-list social-list--footer">
-                        <li class="social-list-item ">
-                            <a class="link social-link-footer " href="/">
-                                <svg class="social-icon" height="24" width="24">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="link social-link-footer" href="/">
-                                <svg class="social-icon" height="24" width="24">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="link social-link-footer" href="/">
-                                <svg class="social-icon" height="24" width="24">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="link social-link-footer" href="/">
-                                <svg class="social-icon" height="24" width="24">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="form-box">
+                    <p class="social-text">Subscribe</p>
+                    <form name="subscription_form" class="subscription-form">
+                        <label class="visually-hidden" for="subsc-form-email">Email</label>    
+                        <input id="subsc-form-email" type="text" name="email" class="input-form" placeholder="Email"/>
+                    
+                        
+                        <button type="submit" class="form-button">
+                            Subscribe
+                            <svg class="icon" height="24" width="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>
@@ -382,6 +399,45 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <div class="modal-body">
+                    <p class="text">Leave your contacts and we will call you back</p>
+                    <form class="modal-form" name="modal-form" autocomplete="off">
+                        <div class="form-item">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" />
+                        </div>
+                        <div class="form-item">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="text" name="phone" />
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" name="email" />
+                        </div>
+                        <div class="form-item">
+                            <label for="comment">Comment</label>
+                            <textarea id="comment" name="comment"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="policy" class="checkbox-form visually-hidden" />
+                                <span class="checkmark">
+                                    <svg class="svg-icon" height="12" width="12">
+                                        <use href="./images/icons.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                                
+                                I accept the terms and conditions of the 
+                                <a href="/" class="link">
+                                    Privacy Policy
+                                </a>
+                            </label>
+                        </div>
+                        <button type="button" class="btn service-btn" data-modal-open>
+                            Send
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     
