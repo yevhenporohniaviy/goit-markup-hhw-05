@@ -37,7 +37,7 @@ ul,ol {
     margin: 0;
     padding: 0;
 }
-input {
+input, textarea {
     outline: none;
 }
 
@@ -622,11 +622,57 @@ input {
     display: flex;
     flex-direction: column;
 }
-.modal-form .form-item {
+.form-item {
     display: flex;
     position: relative;
     flex-direction: column;
+    margin-bottom: 8px;
 }
+
+.form-item label {
+    margin-bottom: 4px;
+}
+
+.input-wrap {
+    position: relative;
+}
+.form-icon {
+    fill: var(--navyblue)
+}
+.form-item svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-item input {
+    border: none;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    padding-left: 38px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-item textarea {
+    border-radius: 4px;
+    padding: 16px 8px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    width: 100%;
+}
+
+.form-item textarea:focus,
+.form-item input:focus {
+    border: 1px solid var(--iris);
+}
+
+.form-item input:focus+svg {
+    fill: var(--iris);
+}
+
 .form-item .item-checkbox {
     display: flex;
     align-items: center;
