@@ -733,7 +733,7 @@ input, textarea {
     border: 1px solid var(--WHITE, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 }
 
@@ -742,6 +742,7 @@ input, textarea {
 }
 
 .subscription-form .icon {
+    margin-left: 16px;
     fill: var(--white);
 }
 .subscription-form .input-form::placeholder{
