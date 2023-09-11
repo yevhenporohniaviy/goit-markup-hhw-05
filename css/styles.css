@@ -702,7 +702,7 @@ input, textarea {
     margin-bottom: 24px;
 }
 .form-item .item-checkbox {
-    display: flex;
+    display: block;
     align-items: center;
     cursor: pointer;
     user-select: none;
@@ -711,7 +711,7 @@ input, textarea {
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.1;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     
 }
@@ -782,21 +782,19 @@ input, textarea {
 
 /* Style the checkmark container */
 .checkmark {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: transparent;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     border-radius: 4px;
     margin-right: 10px;
-    display: flex;
+    display: inline-flex;
+    fill: transparent;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Hide the SVG icon by default */
-.svg-icon {
-    display: none;
-}
 
 /* Style the SVG icon */
 .svg-icon {
@@ -804,11 +802,12 @@ input, textarea {
 }
 
 /* Show the SVG icon when the checkbox is checked */
-.checkbox-form:checked+.checkmark {
+
+.checkbox-form:checked+.item-checkbox .checkmark {
     background-color: var(--ocean);
     border-color: var(--ocean);
 }
 
-.checkbox-form:checked+.checkmark .svg-icon {
+.checkbox-form:checked+.item-checkbox .checkmark:after {
     display: block;
 }

@@ -403,7 +403,7 @@
                         <label class="forn-label" for="user-name">Name</label>
                         <div class="input-wrap">
                             <input type="text" name="user-name" id="user-name" class="form-input">
-                            <svg class="form-icon" height="18" width="18">
+                            <svg class="form-icon" height="24" width="18">
                                 <use href="./images/icons.svg#icon-person"></use>
                             </svg>
                         </div>
@@ -433,10 +433,11 @@
                         <textarea id="user-comment" name="user-comment" placeholder="Text input" class="form-input-area"></textarea>
                     </div>
                     <div class="form-item form-item-check">
-                        <label class="item-checkbox">
-                            <input type="checkbox" name="policy" class="checkbox-form visually-hidden" />
+                        <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="checkbox-form visually-hidden" />
+                        <label class="item-checkbox" for="user-privacy">
+                        
                             <span class="checkmark">
-                                <svg class="svg-icon" height="12" width="12">
+                                <svg class="svg-icon" height="8" width="10">
                                     <use href="./images/icons.svg#icon-check"></use>
                                 </svg>
                             </span>
@@ -447,6 +448,7 @@
                             </a>
                         </label>
                     </div>
+                
                     <button type="button" class="btn service-btn" data-modal-open>
                         Send
                     </button>
