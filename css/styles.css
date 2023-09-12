@@ -183,7 +183,6 @@ input, textarea {
 .footer .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 }
 .footer-logo-text {
     margin-right: 120px;
@@ -343,6 +342,7 @@ input, textarea {
     justify-content: center;
     gap: 24px;
     padding: 0 16px;
+    margin-right: 80px;
 }
 .social-list--footer {
     gap: 16px;
@@ -802,6 +802,9 @@ input, textarea {
 
 /* Show the SVG icon when the checkbox is checked */
 
+.checkbox-form:focus+.item-checkbox .checkmark {
+    border-color: var(--ocean);
+}
 .checkbox-form:checked+.item-checkbox .checkmark {
     background-color: var(--ocean);
     border-color: var(--ocean);
